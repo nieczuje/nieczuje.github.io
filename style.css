@@ -1,0 +1,29 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(
+    circle,
+    rgba(216, 54, 59, 0.08) 0%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(30, 104, 150, 0.08) 100%
+  );
+  background-size: 400% 400%;
+  background-position: -100rem -100rem;
+  animation: gradient 80s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 20% 20%;
+  }
+  50% {
+    background-position: 200% 90%;
+  }
+  100% {
+    background-position: 20% 20%;
+  }
+}
